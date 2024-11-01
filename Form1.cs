@@ -46,12 +46,18 @@ namespace ERP_com_relatorio
         {
             if (txtLogin.Text == "Gabu")
             {
-                MessageBox.Show("GABUZINHOOOOOO!!!!!!", "É o Gabuzinho!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
             }
             else
             {
-                MessageBox.Show("VOCÊ NÃO É O GABUZINHO!!!!", "Não é o Gabu!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Senha incorreta", "Tentar novamente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
