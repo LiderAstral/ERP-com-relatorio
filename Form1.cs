@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ERP_com_relatorio
 {
@@ -19,39 +20,66 @@ namespace ERP_com_relatorio
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtLogin.Text = "Usuário";
+            txtSenha.Text = "Senha";
+            txtSenha.UseSystemPasswordChar = false;
+            txtLogin.GotFocus += RemovePlaceholderUser;
+            txtLogin.LostFocus += SetPlaceholderUser;
+            txtSenha.GotFocus += RemovePlaceholderSenha;
+            txtSenha.LostFocus += SetPlaceholderSenha;
+            btnLogar.FlatAppearance.BorderSize = 0;
+            btnAdmin.FlatAppearance.BorderSize = 0;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void RemovePlaceholderUser(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (txtLogin.Text == "Gabu")
+            if (txtLogin.Text == "Usuário")
             {
-                MessageBox.Show("GABUZINHOOOOOO!!!!!!", "É o Gabuzinho!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                MessageBox.Show("VOCÊ NÃO É O GABUZINHO!!!!", "Não é o Gabu!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtLogin.Text = "";
+                txtLogin.ForeColor = Color.Black;
             }
         }
+
+        private void SetPlaceholderUser(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtLogin.Text))
+            {
+                txtLogin.Text = "Usuário";
+                txtLogin.ForeColor = Color.FromArgb(200, 62, 77);
+            }
+        }
+
+        private void RemovePlaceholderSenha(object sender, EventArgs e)
+        {
+            if (txtSenha.Text == "Senha" && txtSenha.UseSystemPasswordChar == false)
+            {
+                txtSenha.Text = "";
+                txtSenha.ForeColor = Color.Black;
+            }
+        }
+
+        private void SetPlaceholderSenha(object sender, EventArgs e)
+        {
+            if (txtSenha.Text == "")
+            {
+                txtSenha.Text = "Senha";
+                txtSenha.ForeColor = Color.FromArgb(200, 62, 77);
+                txtSenha.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSenha.Text != "")
+                txtSenha.UseSystemPasswordChar = true;
+        }
+
+        private void btnLogar_Click(object sender, EventArgs e)
+        {
+            frmAreaComum frmAreaComum = new frmAreaComum();
+            frmAreaComum.Show();
+            this.Hide();
+        }
+
     }
 }
