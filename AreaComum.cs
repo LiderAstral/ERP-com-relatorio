@@ -34,8 +34,22 @@ namespace ERP_com_relatorio
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            frmCadastroCliente frmCadastroCliente = new frmCadastroCliente(this);
-            frmCadastroCliente.Show();
+            frmClientes frmClientes = new frmClientes(this);
+            frmClientes.Show();
+            this.Hide();
+        }
+
+        private void btnBanho_Click(object sender, EventArgs e)
+        {
+            frmAgendamentos frmAgendamentos = new frmAgendamentos(1, this);
+            frmAgendamentos.Show();
+            this.Hide();
+        }
+
+        private void btnVeterinario_Click(object sender, EventArgs e)
+        {
+            frmAgendamentos frmAgendamentos = new frmAgendamentos(2, this);
+            frmAgendamentos.Show();
             this.Hide();
         }
     }

@@ -13,25 +13,14 @@ namespace ERP_com_relatorio
     public partial class frmCadastroCliente : Form
     {
         private Form form;
-        private string nome, cpf, telefone;
+        private string nome, email, telefone, endereco;
         public frmCadastroCliente(Form Form)
         {
             InitializeComponent();
             form = Form;
         }
 
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNome_TextChanged(object sender, EventArgs e)
+        private void frmCadastroCliente_Load(object sender, EventArgs e)
         {
 
         }
@@ -39,8 +28,9 @@ namespace ERP_com_relatorio
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             nome = txtNome.Text;
-            cpf = txtCPF.Text;
+            email = txtEmail.Text;
             telefone = txtTelefone.Text;
+            endereco = txtEndereco.Text;
         }
 
         private void frmCadastroCliente_FormClosed(object sender, FormClosedEventArgs e)

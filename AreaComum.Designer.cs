@@ -80,6 +80,7 @@
             this.btnBanho.TabIndex = 8;
             this.btnBanho.Text = "Agendamento de Banho";
             this.btnBanho.UseVisualStyleBackColor = false;
+            this.btnBanho.Click += new System.EventHandler(this.btnBanho_Click);
             // 
             // btnVenda
             // 
@@ -125,6 +126,7 @@
             this.btnVeterinario.TabIndex = 11;
             this.btnVeterinario.Text = "Agendamento de Veterinário";
             this.btnVeterinario.UseVisualStyleBackColor = false;
+            this.btnVeterinario.Click += new System.EventHandler(this.btnVeterinario_Click);
             // 
             // btnAvaliacao
             // 

@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAY8AAAFACAYAAABEJPCGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAFP9JREFUeF7t3T+THcW9BuD7yW5iEqi6WgmxuMpKILETEpxAIidOUGISR/5E10JC
+        vAAADrwBlbxySQAAFP9JREFUeF7t3T+THcW9BuD7yW5iEqi6WgmxuMpKILETEpxAIidOUGISR/5E10JC
         gJEslyjfj7KXV9SYZek9e/qc6Zme6Sd4ir979qine97pX/fM/Nf//e23VwBQQ3gAUE14AFBNeABQTXgA
         UE14AFBNeABQTXgAUE14AFBNeABQTXgAUE14AFBNeABQTXgAUE14AFBNeABQTXgAUE14AFBNeABQTXgA
         UE14AFBNeABQTXgAUE14AFBNeABQTXgAUE14AFBNeABQTXgAUE14AFBNeABQTXgAUE14AFBNeABQTXgA
@@ -214,4 +214,19 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <metadata name="Check.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Nome.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Telefone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Endereco.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
