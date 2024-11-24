@@ -148,6 +148,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avaliacao.Designer.cs">
+      <DependentUpon>Avaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastraGato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastraGato.Designer.cs">
+      <DependentUpon>CadastraGato.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +208,12 @@
     <Compile Include="CadastraAgendamento.Designer.cs">
       <DependentUpon>CadastraAgendamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gatos.Designer.cs">
+      <DependentUpon>Gatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,8 +234,14 @@
     <EmbeddedResource Include="AreaComum.resx">
       <DependentUpon>AreaComum.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Avaliacao.resx">
+      <DependentUpon>Avaliacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastraAgendamento.resx">
       <DependentUpon>CadastraAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastraGato.resx">
+      <DependentUpon>CadastraGato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
@@ -233,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gatos.resx">
+      <DependentUpon>Gatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pagamento.resx">
       <DependentUpon>Pagamento.cs</DependentUpon>

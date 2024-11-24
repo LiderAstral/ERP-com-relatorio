@@ -66,5 +66,17 @@ namespace ERP_com_relatorio
             frmVenda.Show();
             this.Hide();
         }
+
+        private void btnGatos_Click(object sender, EventArgs e)
+        {
+            frmGatos frmGatos = new frmGatos(this);
+            frmGatos.Show();
+            this.Hide();
+        }
+
+        private void btnAvaliacao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,6 +19,15 @@ namespace ERP_com_relatorio
             InitializeComponent();
             form = Form;
         }
+        public frmCadastroCliente(Form Form, string Nome, string Email, string Telefone, string Endereco)
+        {
+            InitializeComponent();
+            form = Form;
+            txtNome.Text = Nome;
+            txtEmail.Text = Email;
+            txtTelefone.Text = Telefone;
+            txtEndereco.Text = Endereco;
+        }
 
         private void frmCadastroCliente_Load(object sender, EventArgs e)
         {

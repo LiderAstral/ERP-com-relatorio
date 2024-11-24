@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ERP_com_relatorio
 {
-    public partial class Avaliacao : Form
+    public partial class frmAvaliacao : Form
     {
-        public Avaliacao()
+        public frmAvaliacao()
         {
             InitializeComponent();
+        }
+
+        private void frmAvaliacao_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

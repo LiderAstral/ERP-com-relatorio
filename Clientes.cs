@@ -13,6 +13,10 @@ namespace ERP_com_relatorio
     public partial class frmClientes : Form
     {
         Form form;
+        string nome;
+        string email;
+        string telefone;
+        string endereco;
         public frmClientes(Form form)
         {
             InitializeComponent();
@@ -49,6 +53,13 @@ namespace ERP_com_relatorio
         private void frmClientes_FormClosed(object sender, FormClosedEventArgs e)
         {
             form.Show();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            frmCadastroCliente frmCadastroCliente = new frmCadastroCliente(this, nome, email, telefone, endereco);
+            frmCadastroCliente.Show();
+            this.Hide();
         }
     }
 }

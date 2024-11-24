@@ -183,6 +183,7 @@
             this.MinimumSize = new System.Drawing.Size(1017, 664);
             this.Name = "CadastroEstoque";
             this.Text = "Cadastro de Estoque";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CadastroEstoque_FormClosed_1);
             this.Load += new System.EventHandler(this.CadastroEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
