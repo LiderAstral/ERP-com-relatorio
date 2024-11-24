@@ -33,5 +33,12 @@ namespace ERP_com_relatorio
             frmUsuarios.Show();
             this.Hide();
         }
+
+        private void btnRelatorios_Click(object sender, EventArgs e)
+        {
+            frmRelatorios frmRelatorios = new frmRelatorios(this);
+            frmRelatorios.Show();
+            this.Hide();
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace ERP_com_relatorio
     public partial class frmUsuarios : Form
     {
         Form form;
+        string id;
         public frmUsuarios(Form Form)
         {
             InitializeComponent();
@@ -32,6 +33,13 @@ namespace ERP_com_relatorio
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastraUsuario frmCadastraUsuario = new frmCadastraUsuario(this);
+            frmCadastraUsuario.Show();
+            this.Hide();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            frmCadastraUsuario frmCadastraUsuario = new frmCadastraUsuario(this, id);
             frmCadastraUsuario.Show();
             this.Hide();
         }

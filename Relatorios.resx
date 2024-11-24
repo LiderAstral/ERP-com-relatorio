@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAkoAAAHpCAYAAAB9QxNEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAIqpJREFUeF7t3U2SHdXVqOHb+CYAEzADQCPwBMQE7A4dAlkN00AC4ZDkoIpwfcKy
+        vwAADr8BOAVTJAAAIqpJREFUeF7t3U2SHdXVqOHb+CYAEzADQCPwBMQE7A4dAlkN00AC4ZDkoIpwfcKy
         8AFCCkKE5A6dG5oAYgAwATyBOxRdrbo3Pwp5b1F16mTmWjufxhNhg1D9nPx5c++dmf/r/zz54wsAAP6T
         UAIA6BBKAAAdQgkAoEMoAQB0CCUAgA6hBADQIZQAADqEEgBAh1ACAOgQSgAAHUIJAKBDKAEAdAglAIAO
         oQQA0CGUAAA6hBIAQIdQAgDoEEoAAB1CCQCgQygBAHQIJQCADqEEANAhlAAAOoQSAECHUAIA6BBKAAAd
@@ -272,4 +272,16 @@
         AABNf3zxfwGPlpfRJiFPiQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="Usuario.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DataHora.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Tipo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Registro.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
