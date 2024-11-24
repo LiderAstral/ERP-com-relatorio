@@ -81,5 +81,11 @@ namespace ERP_com_relatorio
             this.Hide();
         }
 
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            frmAreaAdm frmAreaAdm = new frmAreaAdm();
+            frmAreaAdm.Show();
+            this.Hide();
+        }
     }
 }

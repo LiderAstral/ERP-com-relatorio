@@ -100,6 +100,7 @@
             this.btnAdmin.TabIndex = 6;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // lblEsqueceu
             // 
