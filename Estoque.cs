@@ -36,7 +36,7 @@ namespace ERP_com_relatorio
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            frmCadastroEstoque frmCadastroEstoque = new frmCadastroEstoque(this);
+            CadastroEstoque frmCadastroEstoque = new CadastroEstoque(this);
             frmCadastroEstoque.Show();
             this.Hide();
         }

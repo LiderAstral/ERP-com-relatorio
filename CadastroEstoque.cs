@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ERP_com_relatorio
 {
-    public partial class frmCadastroEstoque : Form
+    public partial class CadastroEstoque : Form
     {
         private Form form;
-        public frmCadastroEstoque(Form Form)
+        public CadastroEstoque(Form Form)
         {
             InitializeComponent();
             form = Form;
@@ -37,6 +37,16 @@ namespace ERP_com_relatorio
         private void CadastroEstoque_FormClosed(object sender, FormClosedEventArgs e)
         {
             form.Show();
+        }
+
+        private void btnVoltar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

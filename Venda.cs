@@ -33,5 +33,12 @@ namespace ERP_com_relatorio
         {
             form.Show();
         }
+
+        private void btnProsseguir_Click(object sender, EventArgs e)
+        {
+            frmPagamento frmPagamento = new frmPagamento(this, txtTotalFinal.Text, txtCPF.Text);
+            frmPagamento.Show();
+            this.Hide();
+        }
     }
 }

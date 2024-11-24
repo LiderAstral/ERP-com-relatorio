@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVenda));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,11 +39,11 @@
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Agendamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTotalFinal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescontos = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnProsseguir = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
@@ -97,8 +97,8 @@
             // grdAgendamentos
             // 
             this.grdAgendamentos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdAgendamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdAgendamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.grdAgendamentos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdAgendamentos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
             this.grdAgendamentos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -140,18 +140,18 @@
             this.Total.Name = "Total";
             this.Total.ReadOnly = true;
             // 
-            // textBox2
+            // txtTotalFinal
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.textBox2.Location = new System.Drawing.Point(587, 412);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ShortcutsEnabled = false;
-            this.textBox2.Size = new System.Drawing.Size(319, 40);
-            this.textBox2.TabIndex = 30;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox2.WordWrap = false;
+            this.txtTotalFinal.Enabled = false;
+            this.txtTotalFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalFinal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
+            this.txtTotalFinal.Location = new System.Drawing.Point(587, 412);
+            this.txtTotalFinal.Name = "txtTotalFinal";
+            this.txtTotalFinal.ShortcutsEnabled = false;
+            this.txtTotalFinal.Size = new System.Drawing.Size(319, 40);
+            this.txtTotalFinal.TabIndex = 30;
+            this.txtTotalFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotalFinal.WordWrap = false;
             // 
             // label4
             // 
@@ -164,18 +164,18 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Total Final";
             // 
-            // textBox1
+            // txtDescontos
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.textBox1.Location = new System.Drawing.Point(587, 286);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ShortcutsEnabled = false;
-            this.textBox1.Size = new System.Drawing.Size(319, 40);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.Text = "0,00";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.WordWrap = false;
+            this.txtDescontos.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescontos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
+            this.txtDescontos.Location = new System.Drawing.Point(587, 286);
+            this.txtDescontos.Name = "txtDescontos";
+            this.txtDescontos.ShortcutsEnabled = false;
+            this.txtDescontos.Size = new System.Drawing.Size(319, 40);
+            this.txtDescontos.TabIndex = 28;
+            this.txtDescontos.Text = "0,00";
+            this.txtDescontos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDescontos.WordWrap = false;
             // 
             // label3
             // 
@@ -188,18 +188,18 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Descontos";
             // 
-            // txtNome
+            // txtTotal
             // 
-            this.txtNome.Enabled = false;
-            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.txtNome.Location = new System.Drawing.Point(587, 165);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.ShortcutsEnabled = false;
-            this.txtNome.Size = new System.Drawing.Size(319, 40);
-            this.txtNome.TabIndex = 26;
-            this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtNome.WordWrap = false;
+            this.txtTotal.Enabled = false;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
+            this.txtTotal.Location = new System.Drawing.Point(587, 165);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ShortcutsEnabled = false;
+            this.txtTotal.Size = new System.Drawing.Size(319, 40);
+            this.txtTotal.TabIndex = 26;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotal.WordWrap = false;
             // 
             // label5
             // 
@@ -226,6 +226,7 @@
             this.btnProsseguir.TabIndex = 32;
             this.btnProsseguir.Text = "Prosseguir";
             this.btnProsseguir.UseVisualStyleBackColor = false;
+            this.btnProsseguir.Click += new System.EventHandler(this.btnProsseguir_Click);
             // 
             // btnVoltar
             // 
@@ -251,11 +252,11 @@
             this.ClientSize = new System.Drawing.Size(1001, 625);
             this.Controls.Add(this.btnProsseguir);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTotalFinal);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescontos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.grdAgendamentos);
             this.Controls.Add(this.label2);
@@ -287,11 +288,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Agendamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTotalFinal;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescontos;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnProsseguir;
         private System.Windows.Forms.Button btnVoltar;
