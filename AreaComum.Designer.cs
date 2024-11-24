@@ -111,6 +111,7 @@
             this.btnEstoque.TabIndex = 12;
             this.btnEstoque.Text = "Estoque";
             this.btnEstoque.UseVisualStyleBackColor = false;
+            this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
             // 
             // btnVeterinario
             // 

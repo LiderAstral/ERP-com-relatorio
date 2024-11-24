@@ -52,5 +52,12 @@ namespace ERP_com_relatorio
             frmAgendamentos.Show();
             this.Hide();
         }
+
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+            frmEstoque frmEstoque = new frmEstoque(this);
+            frmEstoque.Show();
+            this.Hide();
+        }
     }
 }
