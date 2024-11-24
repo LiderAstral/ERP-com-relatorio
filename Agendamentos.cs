@@ -43,5 +43,12 @@ namespace ERP_com_relatorio
         {
             form.Show();
         }
+
+        private void btnAgendar_Click(object sender, EventArgs e)
+        {
+            frmCadastraAgendamento frmCadastraAgendamento = new frmCadastraAgendamento(tipo, this);
+            frmCadastraAgendamento.Show();
+            this.Hide();
+        }
     }
 }
