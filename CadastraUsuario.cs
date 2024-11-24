@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ERP_com_relatorio
 {
-    public partial class CadastraUsuario : Form
+    public partial class frmCadastraUsuario : Form
     {
-        public CadastraUsuario()
+        Form form;
+        public frmCadastraUsuario(Form Form)
         {
             InitializeComponent();
+            form = Form;
+        }
+
+        private void CadastraUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

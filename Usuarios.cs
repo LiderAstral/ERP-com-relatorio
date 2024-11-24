@@ -28,5 +28,12 @@ namespace ERP_com_relatorio
         {
             form.Show();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastraUsuario frmCadastraUsuario = new frmCadastraUsuario(this);
+            frmCadastraUsuario.Show();
+            this.Hide();
+        }
     }
 }
