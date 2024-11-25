@@ -29,16 +29,6 @@ namespace ERP_com_relatorio
 
         }
 
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnVoltar_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
@@ -47,6 +37,11 @@ namespace ERP_com_relatorio
         private void CadastroEstoque_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             form.Show();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
