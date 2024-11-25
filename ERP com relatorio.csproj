@@ -178,6 +178,12 @@
     <Compile Include="CadastroEstoque.Designer.cs">
       <DependentUpon>CadastroEstoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.cs">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estoque.resx">
       <DependentUpon>Estoque.cs</DependentUpon>

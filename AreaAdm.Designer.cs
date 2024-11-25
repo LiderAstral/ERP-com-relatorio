@@ -67,6 +67,7 @@
             this.btnCompra.TabIndex = 17;
             this.btnCompra.Text = "Compra";
             this.btnCompra.UseVisualStyleBackColor = false;
+            this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
             // 
             // btnRelatorios
             // 

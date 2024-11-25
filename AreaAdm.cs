@@ -40,5 +40,12 @@ namespace ERP_com_relatorio
             frmRelatorios.Show();
             this.Hide();
         }
+
+        private void btnCompra_Click(object sender, EventArgs e)
+        {
+            frmCompra frmCompra = new frmCompra(this);
+            frmCompra.Show();
+            this.Hide();
+        }
     }
 }
